@@ -41,7 +41,7 @@ public class TicketTest {
 		
 	
 	@Test
-    public void getPrezzoTotaleConEtàNegativaTest()throws Exception {
+    public void getPrezzoTotaleConEtàNegativaTest(){
     	
 		assertThrows(Exception.class, 
 		() -> t.getPrezzoTotale(-1, 20),
@@ -50,7 +50,7 @@ public class TicketTest {
     }
 	
 	@Test
-	public void getPrezzoTotaleConKmUgualeAzeroTest()throws Exception {
+	public void getPrezzoTotaleConKmUgualeAzeroTest(){
 		
 		assertThrows(Exception.class, 
 		() -> t.getPrezzoTotale(18, 0),
@@ -61,7 +61,7 @@ public class TicketTest {
 	
 	
 	@Test
-	public void getPrezzoTotaleConKmNegativoTest() throws Exception{
+	public void getPrezzoTotaleConKmNegativoTest() {
 		
 		 assertThrows(Exception.class, 
 		 () -> t.getPrezzoTotale(18, -1),
